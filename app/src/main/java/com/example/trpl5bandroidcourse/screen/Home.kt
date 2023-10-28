@@ -3,6 +3,7 @@ package com.example.trpl5bandroidcourse.screen
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -29,9 +30,12 @@ fun Home(navController: NavHostController){
         Column (modifier = Modifier.align(Alignment.Center)){
             Text("Selamat datang, the value is $numbercount", color = Color.Black, fontWeight = FontWeight.Medium)
             
-            Row (modifier = Modifier.padding( vertical = 10.dp)){
+            Row (modifier = Modifier.padding( vertical = 10.dp)
+            ){
                 /* a button for increment */
-                Button(onClick = { numbercount++ }) {
+                Button(onClick = { numbercount++ },
+                    colors = ButtonDefaults.buttonColors()
+                ) {
                     Text(text = "+", color = Color(0xFFFCF5ED))
                 }
 
@@ -58,7 +62,7 @@ fun Home(navController: NavHostController){
                  * (lets say counter value is 8) "../Output/8"
                  */
 
-                Text(text = "go to Output pages", color = Color(0xFFFCF5ED)) //navigate to profile
+                Text(text = "go to Output", color = Color(0xFFFCF5ED)) //navigate to profile
             }
         }
     }
