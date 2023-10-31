@@ -8,6 +8,8 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import com.example.trpl5bandroidcourse.Routes
 
@@ -21,8 +23,8 @@ fun Profile(navController: NavHostController){
             .background(Color.White)
     ){
         Column (modifier = Modifier.align(Alignment.Center)){
-            Text("Welcome, Now yout at Profile pages", color = Color.Black)
-
+            Text("Welcome, Muhammad Rayyan Imani", color = Color.Black, fontWeight = FontWeight.SemiBold)
+            Text("Now yout at Profile pages", color = Color.Black)
         }
     }
 }
