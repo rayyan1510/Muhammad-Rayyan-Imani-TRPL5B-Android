@@ -33,9 +33,7 @@ fun Home(navController: NavHostController){
             Row (modifier = Modifier.padding( vertical = 10.dp)
             ){
                 /* a button for increment */
-                Button(onClick = { numbercount++ },
-                    colors = ButtonDefaults.buttonColors() 
-                ) {
+                Button(onClick = { numbercount++ }) {
                     Text(text = "+", color = Color(0xFFFCF5ED))
                 }
 
