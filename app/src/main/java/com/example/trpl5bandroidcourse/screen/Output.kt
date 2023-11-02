@@ -19,7 +19,8 @@ fun Output(value: String?){
             .background(Color.White)
     ){
         Column (modifier = Modifier.align(Alignment.Center)){
-            Text("Welcome, Now yout at Settings pages, and the value is $value", color = Color.Black)
+            Text("Welcome, Now yout at Settings pages", color = Color.Black)
+            Text("and the value is $value", color = Color.Black)
 
         }
     }
