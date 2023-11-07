@@ -26,3 +26,6 @@ Halaman ini berfungsi menampilkan biodata singkat dari pengguna
 
 ## Output
 Pada halaman ini merupakan menampilkan hasil dari variable counter yang dikirim pada halaman home
+
+## Networking
+Fitur networking mengambil data dari Json Dummy
